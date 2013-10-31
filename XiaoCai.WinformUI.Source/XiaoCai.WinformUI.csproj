@@ -1,0 +1,492 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{564E896F-03F1-493E-9BDE-20A72880DB43}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>XiaoCai.WinformUI</RootNamespace>
+    <AssemblyName>XiaoCai.WinformUI</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Cells, Version=4.7.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="Printing.DataGridViewPrint, Version=1.0.0.3, Culture=neutral, PublicKeyToken=8d28dab18f844921, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Printing.DataGridViewPrint.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ButtonW\ButtonW.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ButtonW\ColorHelper.cs" />
+    <Compile Include="CheckBoxW\CheckBoxW.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ComboBoxW\ComboBoxW.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DateTimePickerW\DateTimePickerW .cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DateTimePickerW\DateTimePickerW .designer.cs">
+      <DependentUpon>DateTimePickerW .cs</DependentUpon>
+    </Compile>
+    <Compile Include="Docking\AutoHideStripBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\DockAreasEditor.cs" />
+    <Compile Include="Docking\DockContent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docking\DockContentCollection.cs" />
+    <Compile Include="Docking\DockContentEventArgs.cs" />
+    <Compile Include="Docking\DockContentHandler.cs" />
+    <Compile Include="Docking\DockOutlineBase.cs" />
+    <Compile Include="Docking\DockPane.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Docking\DockPane.SplitterControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Docking\DockPaneCaptionBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\DockPaneCollection.cs" />
+    <Compile Include="Docking\DockPanel.AutoHideWindow.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\DockPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\DockPanel.DockDragHandler.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\DockPanel.DragHandler.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\DockPanel.FocusManager.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\DockPanel.MdiClientController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\DockPanel.Persistor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\DockPanel.SplitterDragHandler.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\DockPanelExtender.cs" />
+    <Compile Include="Docking\DockPaneStripBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\DockWindow.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\DockWindow.SplitterControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\DockWindowCollection.cs" />
+    <Compile Include="Docking\DragForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docking\DummyControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\Enums.cs" />
+    <Compile Include="Docking\FloatWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docking\FloatWindowCollection.cs" />
+    <Compile Include="Docking\Helpers\DockHelper.cs" />
+    <Compile Include="Docking\Helpers\DrawHelper.cs" />
+    <Compile Include="Docking\Helpers\ResourceHelper.cs" />
+    <Compile Include="Docking\Helpers\Win32Helper.cs" />
+    <Compile Include="Docking\InertButtonBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\Interfaces.cs" />
+    <Compile Include="Docking\Localization.cs" />
+    <Compile Include="Docking\Measures.cs" />
+    <Compile Include="Docking\NestedDockingStatus.cs" />
+    <Compile Include="Docking\NestedPaneCollection.cs" />
+    <Compile Include="Docking\SplitterBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\VisibleNestedPaneCollection.cs" />
+    <Compile Include="Docking\VS2005AutoHideStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\VS2005DockPaneCaption.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\VS2005DockPaneStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\Win32\Enums.cs" />
+    <Compile Include="Docking\Win32\NativeMethods.cs" />
+    <Compile Include="Forms\CustomForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CustomForm.designer.cs">
+      <DependentUpon>CustomForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DialogFormW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DialogFormW.designer.cs">
+      <DependentUpon>DialogFormW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WindowsMessage.cs" />
+    <Compile Include="DataGridViewW\DataGridViewW.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataGridViewW\DataGridViewWExtension.cs" />
+    <Compile Include="MessageBoxW\MessageBoxW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageBoxW\MessageBoxW.designer.cs">
+      <DependentUpon>MessageBoxW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanderW\BasePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PanderW\CaptionStyle.cs" />
+    <Compile Include="PanderW\ColorScheme.cs" />
+    <Compile Include="PanderW\ColorSchemeChangeEventArgs.cs" />
+    <Compile Include="PanderW\Constants.cs" />
+    <Compile Include="PanderW\CustomColors.cs" />
+    <Compile Include="PanderW\CustomPanderPanelWColors.cs" />
+    <Compile Include="PanderW\CustomPanelColors.cs" />
+    <Compile Include="PanderW\HoverState.cs" />
+    <Compile Include="PanderW\HoverStateChangeEventArgs.cs" />
+    <Compile Include="PanderW\IPanel.cs" />
+    <Compile Include="PanderW\PanderPanelListW.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PanderW\PanderPanelListW.Designer.cs">
+      <DependentUpon>PanderPanelListW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanderW\PanderPanelW.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PanderW\PanderPanelW.Designer.cs">
+      <DependentUpon>PanderPanelW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanderW\PanderStateChangeEventArgs.cs" />
+    <Compile Include="PanderW\PanelColors.cs" />
+    <Compile Include="PanderW\PanelColorsBlack.cs" />
+    <Compile Include="PanderW\PanelColorsBlue.cs" />
+    <Compile Include="PanderW\PanelColorsBse.cs" />
+    <Compile Include="PanderW\PanelColorsOffice.cs" />
+    <Compile Include="PanderW\PanelColorsOffice2007Black.cs" />
+    <Compile Include="PanderW\PanelColorsOffice2007Blue.cs" />
+    <Compile Include="PanderW\PanelColorsOffice2007Silver.cs" />
+    <Compile Include="PanderW\PanelSettingsManager.cs" />
+    <Compile Include="PanderW\PanelStyle.cs" />
+    <Compile Include="PanderW\PanelStyleChangeEventArgs.cs" />
+    <Compile Include="PanderW\PanelW.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PanderW\PanelW.designer.cs">
+      <DependentUpon>PanelW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanderW\UseAntiAlias.cs" />
+    <Compile Include="PanderW\UseClearTypeGridFit.cs" />
+    <Compile Include="PanderW\PanelColorsOffice2007Red.cs" />
+    <Compile Include="ProgressBarW\ProgressBarW.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProgressBarW\ProgressBarW.Designer.cs">
+      <DependentUpon>ProgressBarW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProgressBarW\ToolStripProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RadioButtonW\RadioButtonW.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RadioButtonW\RadioState.cs" />
+    <Compile Include="RendererW\BseColorTable.cs" />
+    <Compile Include="RendererW\BseRenderer.cs" />
+    <Compile Include="RendererW\ColorTableBlack.cs" />
+    <Compile Include="RendererW\ColorTableBlue.cs" />
+    <Compile Include="RendererW\Office2007BlackColorTable.cs" />
+    <Compile Include="RendererW\Office2007BlueColorTable.cs" />
+    <Compile Include="RendererW\Office2007Renderer.cs" />
+    <Compile Include="RendererW\Office2007SilverColorTable.cs" />
+    <Compile Include="RendererW\OfficeColorTable.cs" />
+    <Compile Include="RendererW\ProfessionalColorTable.cs" />
+    <Compile Include="RendererW\Office2007RedColorTable.cs" />
+    <Compile Include="StyleBuilderFactory.cs" />
+    <Compile Include="SplitterW\SplitterW.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SplitterW\SplitterW.Designer.cs">
+      <DependentUpon>SplitterW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pagers\Pager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pagers\Pager.designer.cs">
+      <DependentUpon>Pager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="StyleManager.cs" />
+    <Compile Include="Enums\Styles.cs" />
+    <Compile Include="Enums\Enums.cs" />
+    <Compile Include="Grouper\Constants.cs" />
+    <Compile Include="Grouper\Grouper.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HelperClass\BorderDrawer.cs" />
+    <Compile Include="HelperClass\ControlPaintEx.cs" />
+    <Compile Include="HelperClass\GraphHelper.cs" />
+    <Compile Include="HelperClass\GraphicsPathHelper.cs" />
+    <Compile Include="HelperClass\RenderHelper.cs" />
+    <Compile Include="HelperClass\RoundStyle.cs" />
+    <Compile Include="HelperClass\StyleHelp.cs" />
+    <Compile Include="IStyle.cs" />
+    <Compile Include="LabelW\LabelW.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ListBoxW\ListBoxW.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Params\KnownParam.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Strures\Strures.cs" />
+    <Compile Include="TabControlW\Events.cs" />
+    <Compile Include="TabControlW\TabControlW.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TextBoxW\TextBoxW.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ToolStrips\MenuStripW.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ToolStrips\MenuStripW.Designer.cs">
+      <DependentUpon>MenuStripW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolStrips\StatusStripW.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ToolStrips\StatusStripW.Designer.cs">
+      <DependentUpon>StatusStripW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolStrips\ToolStripW.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ToolStrips\ToolStripW.Designer.cs">
+      <DependentUpon>ToolStripW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TreeViewW\TreeViewW.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeViewW\TreeViewW.Designer.cs">
+      <DependentUpon>TreeViewW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TreeViewW\TreeViewX.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WinMethod\WinMethod.cs" />
+    <Compile Include="WinMsgs\WinMsgs.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Docking\DockContent.resx">
+      <DependentUpon>DockContent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\DockPane.resx">
+      <DependentUpon>DockPane.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\DragForm.resx">
+      <DependentUpon>DragForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\FloatWindow.resx">
+      <DependentUpon>FloatWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CustomForm.resx">
+      <DependentUpon>CustomForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DialogFormW.resx">
+      <DependentUpon>DialogFormW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grouper\Grouper.resx">
+      <DependentUpon>Grouper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBoxW\MessageBoxW.resx">
+      <DependentUpon>MessageBoxW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanderW\PanderPanelListW.resx">
+      <DependentUpon>PanderPanelListW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanderW\PanderPanelW.resx">
+      <DependentUpon>PanderPanelW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanderW\PanelW.resx">
+      <DependentUpon>PanelW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabControlW\TabControlW.resx">
+      <DependentUpon>TabControlW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pagers\Pager.resx">
+      <DependentUpon>Pager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TextBoxW\TextBoxW.resx">
+      <DependentUpon>TextBoxW.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question3.png" />
+    <None Include="Resources\info3.png" />
+    <None Include="Resources\error3.png" />
+    <None Include="Resources\question2.png" />
+    <None Include="Resources\info2.png" />
+    <None Include="Resources\error2.png" />
+    <None Include="Resources\question.png" />
+    <None Include="Resources\info.png" />
+    <None Include="Resources\error.png" />
+    <None Include="Resources\Dockindicator_PaneDiamond_Fill.bmp" />
+    <None Include="Resources\tabclose.gif" />
+    <None Include="Resources\skinHover.gif" />
+    <None Include="Resources\skin.gif" />
+    <None Include="Resources\ChevronDown.png" />
+    <None Include="Resources\ChevronLeft.png" />
+    <None Include="Resources\ChevronRight.png" />
+    <None Include="Resources\ChevronUp.png" />
+    <None Include="Resources\closePanel.png" />
+    <None Include="Resources\Collapse.jpg" />
+    <None Include="Resources\Collapse_h.jpg" />
+    <None Include="Resources\Expand.jpg" />
+    <None Include="Resources\Expand_h.jpg" />
+    <Content Include="Docking\DockPanel.bmp" />
+    <None Include="Resources\DockIndicator_PaneDiamond.bmp" />
+    <None Include="Resources\DockIndicator_PaneDiamond_Bottom.bmp" />
+    <None Include="Resources\DockIndicator_PaneDiamond_Hotspot.bmp" />
+    <None Include="Resources\DockIndicator_PaneDiamond_HotspotIndex.bmp" />
+    <None Include="Resources\DockIndicator_PaneDiamond_Left.bmp" />
+    <None Include="Resources\DockIndicator_PaneDiamond_Right.bmp" />
+    <None Include="Resources\DockIndicator_PaneDiamond_Top.bmp" />
+    <None Include="Resources\DockIndicator_PanelBottom.bmp" />
+    <None Include="Resources\DockIndicator_PanelBottom_Active.bmp" />
+    <None Include="Resources\DockIndicator_PanelFill.bmp" />
+    <None Include="Resources\DockIndicator_PanelFill_Active.bmp" />
+    <None Include="Resources\DockIndicator_PanelLeft.bmp" />
+    <None Include="Resources\DockIndicator_PanelLeft_Active.bmp" />
+    <None Include="Resources\DockIndicator_PanelRight.bmp" />
+    <None Include="Resources\DockIndicator_PanelRight_Active.bmp" />
+    <None Include="Resources\DockIndicator_PanelTop.bmp" />
+    <None Include="Resources\DockIndicator_PanelTop_Active.bmp" />
+    <None Include="Resources\DockPane_AutoHide.bmp" />
+    <None Include="Resources\DockPane_Close.bmp" />
+    <None Include="Resources\DockPane_Dock.bmp" />
+    <None Include="Resources\DockPane_Option.bmp" />
+    <None Include="Resources\DockPane_OptionOverflow.bmp" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
